@@ -12,19 +12,19 @@ The study investigates the relationship between injection rate, numerical solver
 
 ## Repository Contents
 
+```text
 SPE5-Injection-Feasibility-Study/
-├── README.md # This file
-├── LICENSE # MIT License
-├── input-files/ # Modified SPE5 input decks
-│ ├── SPE5_baseline_12000.DATA # 12,000 rb/day (baseline)
-│ ├── SPE5_elevated_14000.DATA # 14,000 rb/day (+16.7%)
-│ └── SPE5_critical_15000.DATA # 15,000 rb/day (+25%, fails)
+├── README.md                          # This file
+├── LICENSE                            # MIT License
+├── input-files/                       # Modified SPE5 input decks
+│   ├── SPE5_baseline_12000.DATA      # 12,000 rb/day (baseline)
+│   ├── SPE5_elevated_14000.DATA      # 14,000 rb/day (+16.7%)
+│   └── SPE5_critical_15000.DATA      # 15,000 rb/day (+25%, fails)
 ├── results/
-│ └── performance_metrics.csv # Simulation performance data
+│   └── performance_metrics.csv        # Simulation performance data
 └── figures/
-└── (to be added)
-
-text
+    └── (to be added)
+```
 
 ---
 
@@ -71,19 +71,28 @@ flow input-files/SPE5_elevated_14000.DATA --enable-tuning=true
 
 # Critical case (15,000 rb/day - will fail to converge)
 flow input-files/SPE5_critical_15000.DATA --enable-tuning=true
-Results
-Case	Injection Rate (rb/day)	Timesteps	Wall Time (s)	Linearizations	Newton Iterations	Status
-Baseline	12,000	277	4.19	1,289	1,013	✅ Converged
-Elevated	14,000	275	4.11	1,334	1,060	✅ Converged
-Critical	15,000	—	—	—	—	❌ Failed
-Citation
+```
+
+---
+
+## Results
+
+| Case | Injection Rate (rb/day) | Timesteps | Wall Time (s) | Linearizations | Newton Iterations | Status |
+|------|------------------------|-----------|---------------|----------------|-------------------|--------|
+| Baseline | 12,000 | 277 | 4.19 | 1,289 | 1,013 | ✅ Converged |
+| Elevated | 14,000 | 275 | 4.11 | 1,334 | 1,060 | ✅ Converged |
+| Critical | 15,000 | — | — | — | — | ❌ Failed |
+
+---
+
+## Citation
+
 If you use this work, please cite:
 
-Padder, A. N. (2026). Compositional Reservoir Simulation and Gas Injection Feasibility: Implications for CO₂-EOR Using OPM Flow. Technical Report. Zenodo. https://doi.org/10.5281/zenodo.18335824
+Padder, A. N. (2026). *Compositional Reservoir Simulation and Gas Injection Feasibility: Implications for CO₂-EOR Using OPM Flow*. Technical Report. Zenodo. https://doi.org/10.5281/zenodo.18335824
 
-BibTeX:
-
-text
+**BibTeX:**
+```bibtex
 @techreport{padder2026spe5,
   title={Compositional Reservoir Simulation and Gas Injection Feasibility: Implications for CO₂-EOR Using OPM Flow},
   author={Padder, Athar Nisar},
@@ -92,22 +101,34 @@ text
   doi={10.5281/zenodo.18335824},
   url={https://doi.org/10.5281/zenodo.18335824}
 }
-Related Publications
-Technical Report: Zenodo DOI: 10.5281/zenodo.18335824
+```
 
-GitHub Repository: [This repository]
+---
 
-Author
-Athar Nisar Padder
-Email: anpadder@gmail.com
-GitHub: @eonwe141
+## Related Publications
 
-License
+- **Technical Report:** [Zenodo DOI: 10.5281/zenodo.18335824](https://doi.org/10.5281/zenodo.18335824)
+- **GitHub Repository:** [This repository]
+
+---
+
+## Author
+
+**Athar Nisar Padder**  
+Email: anpadder@gmail.com  
+GitHub: [@eonwe141](https://github.com/eonwe141)
+
+---
+
+## License
+
 This work is licensed under the MIT License.
-
 The SPE5 benchmark case is publicly available through the OPM Project.
 
-Acknowledgments
-Open Porous Media (OPM) Initiative for OPM Flow simulator
+---
 
-SPE (Society of Petroleum Engineers) for benchmark specifications
+## Acknowledgments
+
+- Open Porous Media (OPM) Initiative for OPM Flow simulator
+- SPE (Society of Petroleum Engineers) for benchmark specifications
+
