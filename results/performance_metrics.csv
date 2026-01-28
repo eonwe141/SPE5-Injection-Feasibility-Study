@@ -1,0 +1,4 @@
+Case,Injection_Rate_rb_per_day,Timesteps,Wall_Time_seconds,Linearizations,Newton_Iterations,Avg_Iterations_per_Timestep
+Baseline,12000,277,4.19,1289,1013,3.66
+Elevated,14000,275,4.11,1334,1060,3.85
+Critical,15000,NA,NA,NA,NA,Failed_to_converge
