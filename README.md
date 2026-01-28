@@ -91,7 +91,7 @@ flow input-files/SPE5_critical_15000.DATA --enable-tuning=true
 
 ### Comprehensive Simulation Analysis
 
-![Simulation Results](figures/simulation_results.jpg)
+![Simulation Results](figures/simulation_results.png)
 
 *Figure 1: Comprehensive analysis dashboard showing (top-left) simulation performance metrics comparing timesteps and wall time across SPE1 and SPE5 cases, (top-right) solver convergence metrics plotting linearizations and Newton iterations, (bottom-left) injection rate sensitivity analysis identifying the stability boundary at 15,000 rb/day, and (bottom-right) summary table of all key metrics demonstrating sub-linear computational scaling within the stable operational envelope.*
 
