@@ -1,4 +1,4 @@
-# SPE5 Gas Injection Feasibility Study
+# Compositional Reservoir Simulation and Gas Injection Feasibility: Implications for CO₂-EOR Using OPM Flow
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18335824.svg)](https://doi.org/10.5281/zenodo.18335824)
 
