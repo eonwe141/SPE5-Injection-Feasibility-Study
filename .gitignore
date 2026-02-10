@@ -1,0 +1,63 @@
+# ============================================
+# OPM Flow Simulation Output Files (General)
+# ============================================
+# Large binary restart and summary files
+*.UNRST
+*.UNSMRY
+
+# Debug, Grid, and Print files (can be regenerated)
+*.DBG
+*.EGRID
+*.INIT
+*.PRT
+*.SMSPEC
+*.LOG
+*.log
+
+# Visualization files (very large)
+*.VTU
+*.PVD
+
+# ============================================
+# EXCEPTIONS: Keep specific baseline results
+# (Allows reproducibility without bloating the repo)
+# ============================================
+
+# 1. Grid Refinement Study: Keep coarse & refined 12k baselines
+!01_Grid_Refinement_Study/results/coarse_12k/*.UNRST
+!01_Grid_Refinement_Study/results/coarse_12k/*.UNSMRY
+!01_Grid_Refinement_Study/results/refined_12k/*.UNRST
+!01_Grid_Refinement_Study/results/refined_12k/*.UNSMRY
+
+# 2. Permeability Study: Keep 2X 12k baseline
+!02_Permeability_Sensitivity_Study/results/perm_2x_12000/*.UNRST
+!02_Permeability_Sensitivity_Study/results/perm_2x_12000/*.UNSMRY
+
+# 3. Multi-Well Study: Keep 1INJ_1PROD baseline
+!03_Multi_Well_Study/cases/1INJ_1PROD/*.UNRST
+!03_Multi_Well_Study/cases/1INJ_1PROD/*.UNSMRY
+
+# ============================================
+# Python & Environment Files
+# ============================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv
+.env
+.ipynb_checkpoints/
+
+# ============================================
+# OS & Editor Files
+# ============================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
