@@ -6,7 +6,7 @@
 
 This repository contains modified input files and results from a parametric sensitivity study of compositional gas injection in the SPE5 benchmark reservoir using **OPM Flow**, an open-source reservoir simulator.
 
-The study investigates the relationship between injection rate, numerical solver convergence, and stability boundaries—critical metrics for designing CO₂-EOR injection strategies.
+The study investigates the relationship between injection rate, numerical solver convergence, and stability boundaries, critical metrics for designing CO₂-EOR injection strategies.
 
 ---
 
